@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Welcome to Foundation</title>
+
+	<!-- Included CSS Files (Uncompressed) -->
+	<!--
+	<link rel="stylesheet" href="stylesheets/foundation.css">
+	-->
+
+	<!-- Included CSS Files (Compressed) -->
+	<link rel="stylesheet" href="stylesheets/foundation.min.css">
+	<link rel="stylesheet" href="stylesheets/app.css">
+
+	<script src="javascripts/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<style>
+		
+		ul.tabs-content h4 {
+			font-size: 13px;
+			margin-left:12px;
+			color:#000;
+			display:block;
+			clear:both;
+			marigin-top:10px;
+		}
+		
+		ul.tabs-content li ul {
+			list-style-type: disc;
+		}
+		
+		.goal-tabs{
+			min-height:440px;
+		}
+		
+		.side-borders, .top-border, .top-left-border {
+			border: solid 1px #e6e6e6;
+		}
+		
+		.side-borders {
+			border-top-style: hidden;
+			border-right-style: solid;
+			border-bottom-style: hidden;
+			border-left-style: solid;
+		}
+		
+		.top-border {
+			border-top-style: solid;
+			border-right-style: hidden;
+			border-bottom-style: hidden;
+			border-left-style: hidden;
+		}
+		
+		.left-border {
+			border-top-style: hidden;
+			border-right-style: hidden;
+			border-bottom-style: hidden;
+			border-left-style: solid;
+		}
+		
+		.top-left-border {
+			border-top-style: solid;
+			border-right-style: hidden;
+			border-bottom-style: hidden;
+			border-left-style: solid;
+		}
+		
+		.display-section {
+			padding-top:20px;
+		}
+		
+	</style>
+
+</head>
+<body>
+	
+	<div class="row">
+		<div class="twelve columns">
+			<h1>My Goals</h1>
+			<hr />
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="three columns panel">
+			Physical Health
+			
+		</div>
+		<div class="nine columns top-left-border">
+			<ul>
+				<li>Run 3 times per week. M-W-F (mornings)</li>
+				<li>Eat smaller portions at meals</li>
+				<li>Reduce candy intake to only 3 pieces per day</li>
+				<li>Eat less fat and more protein</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="three columns panel">
+			Mental Health
+		</div>
+		<div class="nine columns top-left-border">
+
+			<ul>
+				<li>Make a great effort to think more positively</li>
+				<li>Watch less TV, read a book instead (only .5 hrs TV per day, MAX)</li>
+				<li>Increase attention span, really try to pay attention when spoken to 
+					<ul>
+						<li>Only use phone for non-work-related things during break</li>
+						<li>Do not turn back to keyboard until conversation is done</li>
+						<li>Truly try to understand instead of just auto-accepting. THINK CRITICALLY!</li>
+						<li>Ask questions if you do not understand, but only after giving it some thought</li>
+					</ul>
+				</li>
+				<li>
+					DO NOT watch porn. 
+					<ul>
+						<li>It dulls the mind</li>
+						<li>There are so many other things in this world that deserve my attention before porn. Anything, really</li>
+						<li>It takes over my thought stream</li>
+					</ul>
+				</li>
+				<li>Read books more often. This will help to develop my mind and increase my attention span</li>
+				<li>Take yourself seriously!</li>
+				<li>Respect yourself</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="three columns panel">
+			Career
+		</div>
+		<div class="nine columns top-border">
+			<ul>
+				<li>Be at least 10 mins early per day</li>
+				<li>
+					Wear clothes that fit well and look sharp.
+					<ul>
+						<li>Buy new clothes (white shirts + collared non-button-up shirts. Solid, dark color)</li>
+						<li>Iron shirts possibly</li>
+					</ul>
+				</li>
+				<li>Be professional and forthcoming in interactions with co-workers. If you don't know something, say so.</li>
+				<li>Possibly do hair?</li>
+				<li>Listen to your coworkers ideas and seriously think about them. Communicate with them when you are stuck.</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="row goal-tabs">
+		<div class="twelve column">
+			<dl class="tabs">
+				<dd class="active">
+				<a href="#goal1">Physical Health</a></dd>
+				<dd><a href="#goal2">Mental Health</a></dd>
+				<dd><a href="#goal3">Career</a></dd>
+				<dd><a href="#goal4">Relationships</a></dd>
+				<dd><a href="#goal5">Financial</a></dd>
+				<dd><a href="#goal6">Other</a></dd>
+				<dd><a href="#goal7">Inspirational Quotes</a></dd>
+			</dl>
+
+			<ul class="tabs-content">
+				<li class="active" id="goal1Tab">
+					<h4>No pain, no gain!</h4>
+					<ul>
+						<li>Run 3 times per week. M-W-F (mornings)</li>
+						<li>Eat smaller portions at meals</li>
+						<li>Reduce candy intake to only 3 pieces per day</li>
+						<li>Eat less fat and more protein</li>
+					</ul>
+				</li>
+				<li id="goal2Tab">
+					<h4>Get your mind right!</h4>
+					<ul>
+						<li>Make a great effort to think more positively</li>
+						<li>Watch less TV, read a book instead (only .5 hrs TV per day, MAX)</li>
+						<li>Increase attention span, really try to pay attention when spoken to 
+							<ul>
+								<li>Only use phone for non-work-related things during break</li>
+								<li>Do not turn back to keyboard until conversation is done</li>
+								<li>Truly try to understand instead of just auto-accepting. THINK CRITICALLY!</li>
+								<li>Ask questions if you do not understand, but only after giving it some thought</li>
+							</ul>
+						</li>
+						<li>
+							DO NOT watch porn. 
+							<ul>
+								<li>It dulls the mind</li>
+								<li>There are so many other things in this world that deserve my attention before porn. Anything, really</li>
+								<li>It takes over my thought stream</li>
+							</ul>
+						</li>
+						<li>Read books more often. This will help to develop my mind and increase my attention span</li>
+						<li>Take yourself seriously!</li>
+						<li>Respect yourself</li>
+					</ul>
+				</li>
+				<li id="goal3Tab">
+					<h4>Be a Professional Professional!</h4>
+					<ul>
+						<li>Be at least 10 mins early per day</li>
+						<li>
+							Wear clothes that fit well and look sharp.
+							<ul>
+								<li>Buy new clothes (white shirts + collared non-button-up shirts. Solid, dark color)</li>
+								<li>Iron shirts possibly</li>
+							</ul>
+						</li>
+						<li>Be professional and forthcoming in interactions with co-workers. If you don't know something, say so.</li>
+						<li>Possibly do hair?</li>
+						<li>Listen to your coworkers ideas and seriously think about them. Communicate with them when you are stuck.</li>
+					</ul>
+				</li>
+				<li id="goal4Tab">
+					<h4>Marriage</h4>
+					<ul>
+						<li>Pay attention to your beautiful wife. If anyone deserve it, she does the most.</li>
+						<li>Get something nice for her every once in a while. Surprise her, romance her, etc.</li>
+						<li>Try to take interest in her interests</li>
+						<li>Actively listen to her</li>
+					</ul>
+					<h4>Friendships</h4>
+					<ul>
+						<li>
+							MAKE FRIENDS!
+							<ul>
+								<li>Listening to people will help this</li>
+								<li>Creating hobbies outside of work will too</li>
+								<li>Go to social things. It will help build connections and relationships (maybe this should go in the career category)</li>
+							</ul>
+						</li>
+					</ul>
+					<h4>Workplace</h4>
+					<ul>
+						<li>Communicate more with my coworkers at home office</li>
+						<li>Visit the home office 1 time per week at minimum. Have lunch or something.</li>
+						<li>Chat and email are both great tools for this</li>
+					</ul>
+				</li>
+				<li id="goal5Tab">
+					<h4>Money, Money, Money!</h4>
+					<ul>
+						<li>Donate 33% of personal checking to personal savings</li>
+						<li>Start investing in retirement. Put $500 at a time into mutual funds.</li>
+						<li>
+							Watch the joint account spending more closely.
+							<ul>
+								<li>
+									Only $30 per week on dining out (about 1.5 times)
+								</li>
+								<li>
+									Put as much money toward paying off debt as possible
+								</li>
+							</ul>
+						</li>
+						
+					</ul>
+				</li>
+				<li id="goal6Tab">
+					<h4>No category required.</h4>
+					<ul>
+						<li>Go to bed by 11PM on work nights. A good night's sleep is essential to a good day's work</li>
+						<li>Get up by 6:30AM. This will allow you to get up the same time as Heather</li>
+						<li>Take the dog on a walk when you get home. She needs it</li>
+					</ul>
+				</li>
+				<li id="goal7Tab">
+					<h4>Get inspired.</h4>
+					<ul>
+						<li>Nothing worth doing is easy</li>
+						
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="twelve columns"><hr/></div>
+	</div>
+	<div class="row">
+		<div class="eight columns">
+			<h3>The Grid</h3>
+
+			<!-- Grid Example -->
+			<div class="row">
+				<div class="twelve columns">
+					<div class="panel">
+						<p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<div class="panel">
+						<p>Six columns</p>
+					</div>
+				</div>
+				<div class="six columns">
+					<div class="panel">
+						<p>Six columns</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="four columns">
+					<div class="panel">
+						<p>Four columns</p>
+					</div>
+				</div>
+				<div class="four columns">
+					<div class="panel">
+						<p>Four columns</p>
+					</div>
+				</div>
+				<div class="four columns">
+					<div class="panel">
+						<p>Four columns</p>
+					</div>
+				</div>
+			</div>
+			
+			<h3>Buttons</h3>
+
+			<div class="row">
+				<div class="six columns">
+					<p><a href="#" class="small button">Small Button</a></p>
+					<p><a href="#" class="button">Medium Button</a></p>
+					<p><a href="#" class="large button">Large Button</a></p>
+				</div>
+				<div class="six columns">
+					<p><a href="#" class="small alert button">Small Alert Button</a></p>
+					<p><a href="#" class="success button">Medium Success Button</a></p>
+					<p><a href="#" class="large secondary button">Large Secondary Button</a></p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="four columns">
+			<h4>Getting Started</h4>
+			<p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+
+			<h4>Other Resources</h4>
+			<p>Once you've exhausted the fun in this document, you should check out:</p>
+			<ul class="disc">
+				<li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
+				<li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
+				<li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="twelve columns">
+			<h3>Orbit</h3>
+			<div id="featured">
+				<img src="http://placehold.it/1200x250&text=Slide_1" alt="slide image">
+				<img src="http://placehold.it/1200x250&text=Slide_2" alt="slide image">
+				<img src="http://placehold.it/1200x250&text=Slide_3" alt="slide image">
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="row">
+		<div class="twelve columns">
+			<h3>Reveal</h3>
+			<p><a href="#" data-reveal-id="exampleModal" class="button">Example modal</a></p>
+		</div>
+	</div>
+
+	<div id="exampleModal" class="reveal-modal">
+		<h2>This is a modal.</h2>
+		<p>
+			Reveal makes these very easy to summon and dismiss. The close button is simple an anchor with a unicode 
+			character icon and a class of <code>close-reveal-modal</code>. Clicking anywhere outside the modal will 
+			also dismiss it.
+		</p>
+		<a class="close-reveal-modal">×</a>
+	</div>
+
+
+	<!-- Included JS Files (Uncompressed) -->
+	<!--
+	
+	<script src="javascripts/jquery.js"></script>
+	
+	<script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+	
+	<script src="javascripts/jquery.foundation.forms.js"></script>
+	
+	<script src="javascripts/jquery.foundation.reveal.js"></script>
+	
+	<script src="javascripts/jquery.foundation.orbit.js"></script>
+	
+	<script src="javascripts/jquery.foundation.navigation.js"></script>
+	
+	<script src="javascripts/jquery.foundation.buttons.js"></script>
+	
+	<script src="javascripts/jquery.foundation.tabs.js"></script>
+	
+	<script src="javascripts/jquery.foundation.tooltips.js"></script>
+	
+	<script src="javascripts/jquery.foundation.accordion.js"></script>
+	
+	<script src="javascripts/jquery.placeholder.js"></script>
+	
+	<script src="javascripts/jquery.foundation.alerts.js"></script>
+	
+	<script src="javascripts/jquery.foundation.topbar.js"></script>
+	
+	-->
+
+	<!-- Included JS Files (Compressed) -->
+	<script src="javascripts/jquery.js"></script>
+	<script src="javascripts/foundation.min.js"></script>
+
+	<!-- Initialize JS Plugins -->
+	<script src="javascripts/app.js"></script>
+</body>
+</html>
