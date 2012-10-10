@@ -4,6 +4,7 @@
 
         <title>The Lab - Fixed Scroller</title>
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<link rel="icon" link="image/png" href="favicon.ico" />
         <script> google.load("jquery", "1.7.1"); </script>
         <script type="text/javascript" src="/js/underscore.js"></script>
 	<script type="text/javascript" src="/js/backbone.js"></script>
