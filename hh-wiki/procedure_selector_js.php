@@ -1,4 +1,5 @@
 <?php
+
 $file = array(
 	
 	'name' => 'Procedure Selector',
@@ -7,8 +8,7 @@ $file = array(
 	
 	'file_name' => 'docroot/js/procedure_selector.js',
 	
-	'desc' => '
-		The procedure picker is a UI module that allows the users to select items 
+	'desc' => 'The procedure picker is a UI module that allows the users to select items  
 		from a set of nested lists via mouse click to add/remove items from an entity.',
 	
 	'properties' => array(
@@ -185,71 +185,3 @@ $file = array(
 		),
 	),
 );
-?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<style>
-		.parameters {
-			border-spacing:5px;
-		}
-		
-		.parameters th{
-			text-align:left;
-			font-weight:normal;
-		}
-		
-		.name {
-			font-weight:bold;
-		}
-	</style>
-</head>
-
-<body>
-	<h1><?php echo $file['name']; ?></h1>
-	
-	<h4>Description</h4>
-	<p><?php echo $file['desc']; ?></p>
-	
-	<h4>Properties</h4>
-<?php foreach($file['properties'] as $prop) : ?>
-	<p>
-		Name: <span class="name"><?php echo $prop['name']; ?></span><br/>
-		Type: <?php echo $prop['type']; ?><br/>
-		Description: <?php echo $prop['desc']; ?><br/>
-		<?php if($prop['other']) : ?>
-		Other: <?php echo array_shift($prop['other']); ?>
-		<?php endif; ?>
-	</p>
-<?php endforeach; ?>
-	
-	<h4>Methods</h4>
-<?php foreach($file['methods'] as $mth) : ?>
-	<p>
-		Name: <span class="name"><?php echo $mth['name']; ?></span><br/>
-		Return Type: <?php echo $mth['return']; ?><br/>
-		Description: <?php echo $prop['desc']; ?><br/>
-		Parameters:<br/>
-		<table class="parameters">
-			<tr>
-				<th>Name</th>
-				<th>Type</th>
-				<th>Description</th>
-				<th>Required</th>
-			</tr>
-		<?php foreach($mth['parameters'] as $param) : ?>
-			<tr>
-				<td><?php echo $param['name']; ?></td>
-				<td><?php echo $param['type']; ?></td>
-				<td><?php echo $param['desc']; ?></td>
-				<td><?php echo $param['required'] ? 'Yes' : 'No'; ?></td>
-			</tr>
-		<?php endforeach; ?>
-		</table>
-		----------------------------------------------------
-	</p>
-<?php endforeach; ?>
-	
-</body>
-</html>
