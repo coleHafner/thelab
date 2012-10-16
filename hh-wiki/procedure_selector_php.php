@@ -52,12 +52,14 @@ $file = array(
 			'desc' => 'this contains a collection of parent/child objects that fill
 				the right list. THIS IS OPTIONAL. If an object is present in this 
 				list, it will not show up in the left list. This only works for objects
-				in the child list, not the parent (as of now).',
+				in the child list, not the parent (as of now). It is important that you get the 
+				keys set correctly in this array or else the procedure selector will
+				not be able to unset the selected items from the left list.',
 
 			'other' => array('Structure' => ' array(<br/>
-				&nbsp;&nbsp;&nbsp;array(<br/>
+				&nbsp;&nbsp;&nbsp;array( "[value of the parent]" => <br/>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"parent" => [object],<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;children => [array of objects],<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;children => array("[value of the child object]" => [child object], "[value of the child object]" => [child object]) etc...,<br/>
 				&nbsp;&nbsp;&nbsp;)<br/>
 				);<br/>'
 			)
