@@ -39,8 +39,10 @@ $file = array(
 			'type' => 'array',
 			'desc' => 'this contains a collection of parent/child that fill the left list.',
 			'other' => array('Structure' => ' array(<br/>
-				&nbsp;&nbsp;&nbsp;"parent" => [object],<br/>
-				&nbsp;&nbsp;&nbsp;children => array([array of objects]),<br/>
+				&nbsp;&nbsp;&nbsp;array(<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"parent" => [object],<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;children => [array of objects],<br/>
+				&nbsp;&nbsp;&nbsp;)<br/>
 				);<br/>'
 			)
 		),
@@ -51,11 +53,13 @@ $file = array(
 				the right list. THIS IS OPTIONAL. If an object is present in this 
 				list, it will not show up in the left list. This only works for objects
 				in the child list, not the parent (as of now).',
-			'other' => array(
-					'Structure' => ' array(<br/>
-					&nbsp;&nbsp;&nbsp;"parent" => [object],<br/>
-					&nbsp;&nbsp;&nbsp;children => array([array of objects]),<br/>
-					);<br/>'
+
+			'other' => array('Structure' => ' array(<br/>
+				&nbsp;&nbsp;&nbsp;array(<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"parent" => [object],<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;children => [array of objects],<br/>
+				&nbsp;&nbsp;&nbsp;)<br/>
+				);<br/>'
 			)
 		),
 	)
